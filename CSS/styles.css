@@ -1,0 +1,327 @@
+/* Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Mobile design */
+
+@media screen and (min-width: 320px) {
+
+html {
+	font-size: 80%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Index-Mobile */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+
+/* Index: Header-mobile */
+
+header {
+    background-color: #375474;
+    grid-area: header;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.backgroundLogo {
+    height: 50%;
+    width: 80%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.backgroundLogo img {
+    height: 4vh;
+    width: auto;
+    margin-bottom: 0%;
+}
+
+.menuDesplegablePrincipal img {
+    height: 40%;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 30%
+}
+
+.menuDesplegablePrincipal ul {
+    position: absolute;
+    display: none;
+}
+
+.menuDesplegablePrincipal ul li {
+    display: block;
+}
+
+.menuDesplegablePrincipal:hover ul {
+    display: block;
+    background-color: #375474
+}
+
+.estiloLista li {
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    font-size: 2rem;
+    margin-top: 7%;
+}
+
+.estiloLista li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Index: Main Mobile */
+
+main {
+    grid-area: main;
+    background-color: #ffd881;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.portada img {
+    height: 80vh;
+    width: auto;
+    z-index: -1;
+}
+
+.portada__cuadro {
+    position: absolute;
+    background-color: #375474;
+    border: solid #ffd479 5px;
+    align-self: center;
+    text-align: center;
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 2%;
+}
+
+.portada__cuadro a {
+    font-size: x-large;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #47b475;
+    margin-bottom: 10px;
+}
+
+/* Biografía Mobile */
+
+.biografia__content {
+    background-color: rgb(255, 229, 173);
+    font-size: large;
+    border: #99492d solid 15px;
+    margin-top: 3%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    overflow-y: auto;
+}
+
+.biografia__content h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.biografia__content p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Discografía Mobile */
+
+.discografiaBackground {
+    grid-area: main;
+    background-color: #ffd881;
+}
+
+.discografia {
+    border: 20px solid rgba(134, 40, 6, 0.842);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5%;
+    background-color: #ffd881;
+    font-size: x-large;
+    text-align: center;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.discografia section div a img {
+    height: 25vh;
+    width: auto;
+}
+
+/* Footer Mobile */
+footer {
+    grid-area: footer;
+    background-color: #375474;
+    overflow: hidden;
+}
+
+.estiloFooter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.estiloFooter li a img {
+    height: 50px;
+    margin-top: 33%;
+}
+
+} /* fin media min-320px */
+
+@media screen and (min-width: 1024px) {
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+}
+
+/* Header-desktop */
+
+header {
+    grid-area: header;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+.backgroundLogo img {
+    height: 4vh;
+    width: auto;
+    margin-top: 2%;
+}
+
+.menuDesplegablePrincipal img {
+    height: 5vh;
+    width: auto;
+}
+
+.menuSecciones {
+    align-self:center;
+}
+
+/* Main Desktop */
+
+main {
+    background-color: rgba(134, 40, 6, 0.842);
+}
+
+.portada__cuadro {
+    font-size: x-large;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.portada__cuadro a {
+    font-size:xx-large;
+    margin-top: 10%;
+}
+
+/* Biografía Desktop */
+
+.background {
+    background-color: #ffd881;
+}
+
+.biografia__content {
+    background-color: rgb(255, 229, 173);
+    font-size: xx-large;
+    border: #99492d solid 15px;
+    margin-top: 3%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    overflow-y: auto;
+}
+
+.biografia__content h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.biografia__content p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* discografía desktop */
+
+.discografiaBackground {
+    grid-area: main;
+    background-color: #ffd881;
+}
+
+.discografia {
+    border: none;
+    height: 63%;
+    width: auto;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    padding: 5%;
+    background-color: #ffd881;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.discografia__top div{
+    margin-right: 100px;
+
+}
+
+.discografia__bottom div {
+    margin-left: 100px;
+}
+
+/* Footer-Desktop */
+
+.estiloFooter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    margin-left: 3%;
+}
+
+.estiloFooter li a img {
+    padding-left: 50px;
+}
+
+} /* fin media 1024px */
